@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="enter">
+        <div class="a1">
+            <label class="label" for="day">DAY</label>
+            <input type="number" id="day" name="day" required min="" max="">
+            <span id="day-error" class="error-message">This field is required</span><br>
+            <span id="date-error" class="error-message">The date entered is not valid</span><br>
+            <span id="month-future-error" class="error-message">Month cannot be in the future</span><br>
+        </div>
+
+        <div class="a1">
+            <label class="label" for="month">MONTH</label>
+            <input type="number" id="month" name="month" required min="" max="">
+            <span id="month-error" class="error-message">This field is required</span><br>
+            <span id="date-error" class="error-message">The date entered is not valid</span><br>
+        </div>
+
+        <div class="a1">
+            <label class="label" for="year">YEAR</label>
+            <input type="number" id="year" name="year" required min="1850" max="">
+            <span id="year-error" class="error-message">This field is required</span><br>
+            <span id="date-error" class="error-message">The date entered is not valid</span><br>
+        </div>
+       
+    </div>
+    <hr class="ligne"/>
+    <a><button onclick="displayValues()" class="button">Click</button></a>
+
+    <div class="affichage">
+        <p id="years"><span class="highlight">--</span><span class="black"> years</span></p>
+        <p id="months"><span class="highlight">--</span><span class="black"> months</span></p>
+        <p id="days"><span class="highlight">--</span><span class="black"> days</span></p>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rudy Robert</a>.
+  </div>
+</body>
+</html>
